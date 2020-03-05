@@ -23,7 +23,6 @@ function App() {
   return (
     <div className="App">
       {console.log(data)}
-      {console.log(days)}
       <Head Title={data.title} Date={data.date}/>
       <Body imageUrl={data.url} Text={data.explanation}/>
     </div>
