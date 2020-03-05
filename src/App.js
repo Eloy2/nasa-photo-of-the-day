@@ -7,16 +7,9 @@ import Body from "./Body";
 
 
 function App() {
-  //Demo key added &date=2019-12-19 to select specific date
-  const demoKey = 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2019-12-19'
   //Api key added &date=2019-12-19 to select specific date
   const apiKey = 'https://api.nasa.gov/planetary/apod?api_key=kaIgxanxzDWQfDWJHUsoMwX4RCMJCTxECmMgTDah&date=2019-12-'
   const [data, setData] = useState([]);
-
-  //Made an array that has numbers 1 through 31 to loop through all days in December
-  const days = Array.from(Array(32).keys())
-  //removed the number 0 from the array at index 0 since there is no day 0 in any month 
-  days.splice(0,1);
 
   useEffect(() => {
     axios
